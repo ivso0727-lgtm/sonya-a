@@ -1,180 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Для моей Сонечки ❤️</title>
+<title>Для моей Сони ❤️</title>
 <style>
 *{box-sizing:border-box}
-body{
- margin:0;
- font-family:Georgia,serif;
- color:#71334f;
- background:linear-gradient(135deg,#fff1f7,#f8c5dc,#fff7fb);
- text-align:center;
-}
-section{padding:65px 20px}
-.hero{
- min-height:100vh;
- display:flex;
- flex-direction:column;
- justify-content:center;
- align-items:center;
- padding:25px;
- position:relative;
- overflow:hidden;
-}
-h1{font-size:clamp(45px,12vw,76px);margin:20px 0}
-h2{font-size:34px;font-weight:normal}
+body{margin:0;font-family:Georgia,serif;color:#632743;background:linear-gradient(135deg,#fff0f5,#ffe0eb,#fff7fa);text-align:center}
+header{padding:65px 20px 35px}
+h1{font-size:clamp(36px,7vw,65px);margin:10px 0;color:#c02e68}
+.subtitle{font-size:19px;line-height:1.7}
+main{max-width:900px;margin:auto;padding:0 18px 55px}
+.card{background:#ffffffd9;border:1px solid #ffd0e0;border-radius:24px;padding:25px;margin:22px 0;box-shadow:0 10px 35px #a72c5010}
+h2{color:#bd356b}
 p{font-size:18px;line-height:1.8}
-button{
- border:0;border-radius:30px;padding:14px 23px;
- background:#dc5b91;color:white;font-size:16px;
- cursor:pointer;margin:10px;
-}
-.card{
- max-width:650px;margin:25px auto;padding:28px;
- background:#ffffffcf;border-radius:24px;
- box-shadow:0 10px 35px #a7467020;
- line-height:1.9;font-size:18px;
-}
-.heart{
- position:absolute;bottom:-40px;
- color:#e75b97;animation:float 8s linear infinite;
- pointer-events:none;
-}
-@keyframes float{
- to{transform:translateY(-110vh) rotate(360deg);opacity:0}
-}
-.photos{display:grid;grid-template-columns:1fr;gap:15px;max-width:600px;margin:auto}
-.photos img{width:100%;border-radius:18px;object-fit:cover;max-height:400px}
-.photo-placeholder{
- border:2px dashed #dc8bb1;border-radius:18px;
- padding:35px 15px;background:#fff8fb;
-}
-input[type=url]{
- width:90%;max-width:400px;padding:13px;
- border:1px solid #e5a3c2;border-radius:12px;
-}
-.gift{font-size:75px;cursor:pointer}
+button{border:0;border-radius:30px;background:#d83d78;color:white;padding:14px 24px;font-size:17px;cursor:pointer;margin:8px}
+button:hover{background:#b92560}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.photos img{width:100%;height:300px;object-fit:cover;border-radius:18px;border:3px solid white;box-shadow:0 5px 18px #7d244222}
 .hidden{display:none}
-footer{padding:35px}
+.heart{position:fixed;bottom:-30px;animation:float 6s linear forwards;pointer-events:none;z-index:5}
+@keyframes float{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+footer{padding:25px;color:#a34b70}
 </style>
 </head>
 <body>
+<header>
+<div style="font-size:42px">💗 🌷 💗</div>
+<h1>Соня, прости меня</h1>
+<div class="subtitle">Ты очень дорога мне.<br>Я хочу, чтобы ты знала, как сильно я тебя люблю.</div>
+</header>
 
-<section class="hero">
- <div style="font-size:45px">💗</div>
- <p>Маленький мир, созданный специально для тебя</p>
- <h1>Для моей<br>Сонечки</h1>
- <p>Есть кое-что, что я хочу сказать тебе от всего сердца...</p>
- <button onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">
-  Открыть моё письмо ❤️
- </button>
+<main>
+<section class="card">
+<h2>От всего сердца ❤️</h2>
+<p>Моя любимая Соня, прости меня, пожалуйста, за то, что я тебя обидел. Мне очень жаль, что я причинил тебе боль.</p>
+<p>Ты для меня особенная. Я не хочу, чтобы между нами оставались обиды. Я хочу учиться лучше понимать тебя, слышать тебя и беречь твои чувства.</p>
+<p>Я не прошу забыть всё за секунду. Я просто хочу искренне сказать: <b>прости меня, пожалуйста.</b></p>
+<p>Я очень тебя люблю. ❤️</p>
 </section>
 
-<section id="letter">
- <h2>Прости меня, любимая</h2>
- <div class="card">
-  <p>Моя любимая Сонечка ❤️</p>
-  <p>Мне очень жаль, что я причинил тебе боль. Я не хочу оправдываться или делать вид, что одного слова «прости» достаточно.</p>
-  <p>Ты очень много для меня значишь. Я хочу не просто говорить о своей любви, а показывать её поступками, вниманием и заботой.</p>
-  <p>Я понимаю, что тебе может понадобиться время. Я не хочу торопить тебя или заставлять забыть то, что случилось. Мне важно услышать тебя и понять твои чувства.</p>
-  <p>Я дорожу нашими воспоминаниями, твоей улыбкой, нашими разговорами и даже самыми обычными моментами рядом с тобой.</p>
-  <p>Я не обещаю быть идеальным. Но хочу учиться на своих ошибках и доказывать тебе делами, что наши отношения важны для меня.</p>
-  <p>Я люблю тебя, Сонечка. Очень. ❤️</p>
-  <p>Твой Ваня 💌</p>
-  <button onclick="document.querySelector('#extra').classList.toggle('hidden')">
-   Тут ещё кое-что...
-  </button>
-  <p id="extra" class="hidden">
-   Если бы я мог сейчас тебя обнять, я бы крепко-крепко тебя обнял.
-   Не чтобы всё сразу стало хорошо, а чтобы ты знала, как много ты для меня значишь. ❤️
-  </p>
- </div>
+<section class="card">
+<h2>Наши фотографии 📸</h2>
+<p>Каждая фотография напоминает мне о том, как много ты для меня значишь.</p>
+<div class="photos">
+<img src="image%201.jpg" alt="Наше фото 1">
+<img src="image%202.jpg" alt="Наше фото 2">
+<img src="image%204.jpg" alt="Наше фото 3">
+</div>
 </section>
 
-<section>
- <h2>Наши воспоминания 📸</h2>
- <p>Здесь будут ваши любимые моменты.</p>
- <div class="photos">
-  <div class="photo-placeholder">
-   🌷 Ваше первое особенное воспоминание
-  </div>
-  <div class="photo-placeholder">
-   💕 Ваш самый счастливый момент
-  </div>
-  <div class="photo-placeholder">
-   ✨ Фото, которое заставляет улыбаться
-  </div>
- </div>
- <p style="font-size:14px">Позже можно заменить эти блоки вашими фотографиями.</p>
+<section class="card">
+<h2>Маленький сюрприз 🎁</h2>
+<p>Соня, нажми на кнопку — для тебя есть ещё кое-что.</p>
+<button onclick="document.getElementById('surprise').classList.toggle('hidden')">Открыть сюрприз 💝</button>
+<div id="surprise" class="hidden">
+<h2>Я выбираю тебя ❤️</h2>
+<p>Не только в счастливые моменты, но и тогда, когда нам непросто. Я хочу исправлять ошибки поступками, а не только словами.</p>
+<p style="font-size:35px">💖 💗 💖</p>
+</div>
 </section>
 
-<section>
- <h2>Песня для тебя 🎵</h2>
- <div class="card">
-  <div style="font-size:65px">🎶</div>
-  <p>Есть чувства, которые иногда проще выразить музыкой.</p>
-  <p>Вставь ссылку на песню, которую хочешь посвятить Соне:</p>
-  <input type="url" id="song" placeholder="Вставь ссылку на песню">
-  <br>
-  <button onclick="playSong()">Послушать ❤️</button>
-  <p id="songError" class="hidden">Сначала вставь настоящую ссылку на песню 🥹</p>
- </div>
+<section class="card">
+<h2>Одно обещание</h2>
+<p>Я постараюсь внимательнее относиться к твоим чувствам, честно разговаривать с тобой и показывать свою любовь не только словами.</p>
+<button onclick="for(let i=0;i<18;i++){let h=document.createElement('div');h.className='heart';h.textContent=['❤️','💗','💕','💖'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(20+Math.random()*25)+'px';h.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}">Послать тебе сердечки 💕</button>
 </section>
-
-<section>
- <h2>Для тебя есть подарок 🎁</h2>
- <p>Нажми на коробочку...</p>
- <div class="gift" onclick="openGift()" id="gift">🎁</div>
- <div class="card hidden" id="giftMessage">
-  <h2>Моя Сонечка ❤️</h2>
-  <p>Я хочу, чтобы ты чувствовала себя любимой, услышанной и важной.</p>
-  <p>Я хочу уметь выслушать тебя, признавать свои ошибки и исправлять их поступками.</p>
-  <p>Спасибо, что ты есть в моей жизни. Обнимаю тебя крепко-крепко. 💗</p>
-  <div style="font-size:45px">💖</div>
- </div>
-</section>
-
-<footer>
- <p>Создано с любовью для Сонечки ❤️</p>
- <button onclick="hearts()">Послать тебе сердечки 💕</button>
-</footer>
-
-<script>
-function hearts(){
- for(let i=0;i<25;i++){
-  let h=document.createElement('span');
-  h.className='heart';
-  h.textContent=Math.random()>.5?'❤️':'💕';
-  h.style.left=Math.random()*100+'vw';
-  h.style.animationDuration=(3+Math.random()*5)+'s';
-  h.style.fontSize=(18+Math.random()*25)+'px';
-  document.body.appendChild(h);
-  setTimeout(()=>h.remove(),8500);
- }
-}
-function openGift(){
- document.getElementById('gift').textContent='💝';
- document.getElementById('giftMessage').classList.remove('hidden');
- hearts();
-}
-function playSong(){
- let value=document.getElementById('song').value.trim();
- if(!value){
-  document.getElementById('songError').classList.remove('hidden');
-  return;
- }
- try{
-  let url=new URL(value);
-  if(!['http:','https:'].includes(url.protocol))throw Error();
-  window.open(url.href,'_blank','noopener,noreferrer');
- }catch(e){
-  document.getElementById('songError').classList.remove('hidden');
- }
-}
-</script>
+</main>
+<footer>С любовью, для моей Сони ❤️</footer>
 </body>
 </html>
